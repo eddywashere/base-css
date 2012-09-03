@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-@import "reset";
+@import "common/reset";
 
-@import "grid";
+@import "common/grid";
 
-@import "settings";
+@import "common/settings";
 
-@import "base";
+@import "common/base";
 
-@import "layout";
+@import "common/layout";
 
 @import "modules/menu";
