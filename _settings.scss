@@ -1,0 +1,60 @@
+// Colors
+$base-color: #000;
+$darker: $base-color;
+$dark: lighten( $base-color, 20% );
+$light: lighten( $base-color, 40% );
+$lighter: lighten( $base-color, 60% );
+
+$linkColor: #2096da;
+$linkHover: #157bb6;
+
+$selection: $light;
+
+$fonts-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fonts-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$fonts: $fonts-sans-serif;
+
+$size1: 47.25px;
+$size2: 36px;
+$size3: 31.5px;
+$size4: 24px;
+$size5: 21px;
+$size6: 16px;
+$size7: 14px;
+$size8: 10.667px;
+$size9: 9.333px;
+$size10: 7.111px;
+$baseFontSize:          $size6;
+$tabletFontSize:          $size7;
+$baseLineHeight:        1.5;
+
+// Frame
+$headerHeight: 91px;
+$footerHeight: 40px;
+
+// Grid Settings
+$total-width: 100%;
+
+$screen-small: "only screen and (max-width: 640px)";
+$screen-medium: "only screen and (max-width: 1024px)";
+$screen-large: "only screen and (max-width: 1140px)";
+$screen-retina: "only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)";
+
+//@media #{$screen-size} {
+//  background: red;
+//}
+
+@mixin clearfix() {
+  clear: both;
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline;
+  }
+
+  &:after { clear: both; }
+}

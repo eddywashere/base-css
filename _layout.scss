@@ -1,0 +1,35 @@
+///* sticky footer */
+//html, body, .wrapper { 
+//	height: 100%;
+//}
+//body > .wrapper {
+//	height: auto;
+//	min-height: 100%;
+//}
+//.container { 
+//	padding-bottom: 51px; /* must be same height as the footer */
+//}
+//.footer { 
+//	position: relative; margin-top: -51px; /* negative value of footer height */
+//}
+///* end sticky footer (see also clearfix and footer for moar stickiness) */
+
+
+.wrapper {
+	margin: 0px auto;
+	padding: 0 1em;
+	max-width:1120px;
+	overflow: hidden;
+}
+
+header {
+	
+}
+
+.container {
+	
+}
+
+footer {
+	
+}
