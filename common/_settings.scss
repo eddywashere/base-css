@@ -33,7 +33,10 @@ $headerHeight: 91px;
 $footerHeight: 40px;
 
 // Grid Settings
-$total-width: 100%;
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
 $screen-small: "only screen and (max-width: 640px)";
 $screen-medium: "only screen and (max-width: 1024px)";
@@ -57,4 +60,9 @@ $screen-retina: "only screen and (-webkit-min-device-pixel-ratio : 1.5), only sc
   }
 
   &:after { clear: both; }
+}
+
+@mixin negative-margins() {
+  margin: 0 0 - $grid-padding;
+  padding: 0 $grid-padding;
 }

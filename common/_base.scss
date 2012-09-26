@@ -6,7 +6,6 @@
 }
   
 body {
-	background-color:#ddd;
 	font-family: $fonts;
 	font-size: $size6;
 	line-height: $baseLineHeight;
@@ -19,170 +18,180 @@ body {
 
 a, a:visited {
 	text-decoration: none;
-	color: $linkColor;
-}
-
-a:hover {
-	text-decoration: underline;
-	color: $linkHover;
 }
   
 a:focus {
-	color: $linkColor; 
 	outline: none;
 }
 
 /* Typography ---------------------- */
 
-p {
-	margin: 0 0 $size8;
-	small {
-	  font-size: $baseFontSize - 2;
-	  color: $light;
+article {
+	a, a:visited {
+		text-decoration: none;
+		color: $linkColor;
 	}
-}
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 $size8;
-	color: $darker;
-	text-rendering: optimizelegibility;
-	small {
-	  font-family: $fonts;
-	  font-weight: normal;
-	  color: $dark;
+	a:hover {
+		text-decoration: underline;
+		color: $linkHover;
 	}
-}
-
-h1 {
-	font-size: 47.250px;
-	small {
-		font-size: 28px;
-		line-height:1em;
-		display:block;
+	  
+	a:focus {
+		color: $linkColor; 
+		outline: none;
 	}
-}
-h2 {
-	font-size: 36px;
-	//  border-bottom: 1px solid #CCC;
-	small {
-	  font-size: 22px;
-	}
-}
-h3 {
-	font-size: 31.5px;
-	color: $dark;
-	small {
-	  font-size: 16px;
-	}
-}
-h4, h5, h6 {
 
-}
-h4 {
-	font-size: 24px;
-	small {
-	  font-size: 12px;
-	}
-}
-h5 {
-	font-size: 21px;
-}
-h6 {
-	font-size: 16px;
-	color: $light;
-	text-transform: uppercase;
-}
-
-
-// LISTS
-// -----
-
-// Unordered and Ordered lists
-ul, ol {
-	padding: 0;
-	margin: 0 0 $size8 25px;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-	margin-bottom: 0;
-}
-ul {
-	list-style: disc;
-}
-ol {
-	list-style: decimal;
-}
-li {
-	line-height: $baseLineHeight;
-}
-
-// Description Lists
-dl {
-	margin-bottom: $size8;
-	font-size:$baseFontSize;
-}
-dt,
-dd {
-	line-height: $baseLineHeight;
-}
-dt {
-	font-weight: bold;
-}
-dd {
-	margin-left: $size4;
-	font-size: $size7;
-}
-
-// MISC
-// ----
-
-// Horizontal rules
-hr {
-	margin: $baseLineHeight 0;
-	border: 0;
-	border-top: 1px solid $light;
-	border-bottom: 1px solid $dark;
-}
-
-// Emphasis
-strong {
-	font-weight: 400;
-}
-em {
-	font-style: italic;
-}
-
-// Abbreviations and acronyms
-abbr {
-	font-size: 90%;
-	text-transform: uppercase;
-	border-bottom: 1px dotted #ddd;
-	cursor: help;
-}
-
-// Blockquotes
-
-blockquote {
-	padding: 0 0 0 15px;
-	margin: 0 0 $baseLineHeight;
-	border-left: 5px solid $lighter;
-	color: $lighter;
 	p {
-		margin-bottom: 0;
-		span {
-			color: $light;
-			font-style: italic;
+		margin: 0 0 $size8;
+		small {
+		  font-size: $baseFontSize - 2;
+		  color: $light;
 		}
 	}
-	small {
-		display: block;
-		line-height: $baseLineHeight;
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 $size8;
+		color: $darker;
+		text-rendering: optimizelegibility;
+		small {
+		  font-family: $fonts;
+		  font-weight: normal;
+		  color: $dark;
+		}
+	}
+
+	h1 {
+		font-size: 47.250px;
+		small {
+			font-size: 28px;
+			line-height:1em;
+			display:block;
+		}
+	}
+	h2 {
+		font-size: 36px;
+		//  border-bottom: 1px solid #CCC;
+		small {
+		  font-size: 22px;
+		}
+	}
+	h3 {
+		font-size: 31.5px;
+		color: $dark;
+		small {
+		  font-size: 16px;
+		}
+	}
+	h4, h5, h6 {
+
+	}
+	h4 {
+		font-size: 24px;
+		small {
+		  font-size: 12px;
+		}
+	}
+	h5 {
+		font-size: 21px;
+	}
+	h6 {
+		font-size: 16px;
 		color: $light;
-		&:before {
-			content: '\2014 \00A0';
+		text-transform: uppercase;
+	}
+
+
+	// LISTS
+	// -----
+
+	// Unordered and Ordered lists
+	ul, ol {
+		padding: 0;
+		margin: 0 0 $size8 25px;
+	}
+
+	ul ul,
+	ul ol,
+	ol ol,
+	ol ul {
+		margin-bottom: 0;
+	}
+	ul {
+		list-style: disc;
+	}
+	ol {
+		list-style: decimal;
+	}
+	li {
+		line-height: $baseLineHeight;
+	}
+
+	// Description Lists
+	dl {
+		margin-bottom: $size8;
+		font-size:$baseFontSize;
+	}
+	dt,
+	dd {
+		line-height: $baseLineHeight;
+	}
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin-left: $size4;
+		font-size: $size7;
+	}
+
+	// MISC
+	// ----
+
+	// Horizontal rules
+	hr {
+		margin: $baseLineHeight 0;
+		border: 0;
+		border-top: 1px solid $light;
+		border-bottom: 1px solid $dark;
+	}
+
+	// Emphasis
+	strong {
+		font-weight: 400;
+	}
+	em {
+		font-style: italic;
+	}
+
+	// Abbreviations and acronyms
+	abbr {
+		font-size: 90%;
+		text-transform: uppercase;
+		border-bottom: 1px dotted #ddd;
+		cursor: help;
+	}
+
+	// Blockquotes
+
+	blockquote {
+		padding: 0 0 0 15px;
+		margin: 0 0 $baseLineHeight;
+		border-left: 5px solid $lighter;
+		color: $lighter;
+		p {
+			margin-bottom: 0;
+			span {
+				color: $light;
+				font-style: italic;
+			}
+		}
+		small {
+			display: block;
+			line-height: $baseLineHeight;
+			color: $light;
+			&:before {
+				content: '\2014 \00A0';
+			}
 		}
 	}
 }

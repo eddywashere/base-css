@@ -1,8 +1,8 @@
 @charset "UTF-8";
+// compass grid plugin - **add compass and compass-rails to gemfile**
+@import 'susy';
 
 @import "common/reset";
-
-@import "common/grid";
 
 @import "common/settings";
 
