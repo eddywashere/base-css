@@ -1,0 +1,28 @@
+{
+  "name": "base-css",
+  "version": "0.0.1",
+  "description": "Base css templates",
+  "main": "grunt.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "qunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eddywashere/base-css.git"
+  },
+  "author": "eddy hernandez",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "grunt-contrib": "~0.3.0",
+    "grunt-recess": "*",
+    "grunt-contrib-less": "*",
+    "grunt-sass": "*"
+  }
+}
