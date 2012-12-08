@@ -1,15 +1,6 @@
-### base-scss
+### base-css
 
-Starting point for css in rails via scss.
-Inpired by [mvcss](https://github.com/mvcss/MVCSS).
+Starting point for css across multiple preprocessors.
+Inpired by [mvcss](https://github.com/mvcss/MVCSS) and [smacss](http://smacss.com/).
 
-For new app setup, just trash default stylesheets directory (/app/assets/stylesheets)
-
-In assets directory, clone the project and rename it to stylesheets
-
-    git clone https://github.com/eddywashere/base-scss.git stylesheets
-
-Since this is more of a boilerplate, delete the .git folder and README.md in the stylesheets directory
-
-    rm -rf .git
-    rm README.md
+WIP
